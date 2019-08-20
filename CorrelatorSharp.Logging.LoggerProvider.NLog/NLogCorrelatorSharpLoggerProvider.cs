@@ -7,8 +7,7 @@ namespace CorrelatorSharp.Logging.LoggerProvider.NLog
     [ExcludeFromCodeCoverage]
     public class NLogCorrelatorSharpLoggerProvider : CorrelatorSharpLoggerProvider
     {
-        public NLogCorrelatorSharpLoggerProvider()
-            : base(new NLogScopeProvider())
+        public NLogCorrelatorSharpLoggerProvider() : base(new NLogScopeProvider())
         {
             LoggingConfiguration.Current.UseNLog();
         }
