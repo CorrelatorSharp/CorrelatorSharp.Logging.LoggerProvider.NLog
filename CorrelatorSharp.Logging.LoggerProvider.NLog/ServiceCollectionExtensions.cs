@@ -8,7 +8,7 @@ namespace CorrelatorSharp.Logging
     {
         public static void UseCorrelatorSharpNLogLoggerProvider(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddSingleton<ILoggerProvider, NLogCorrelatorSharpLoggerProvider>();
+            serviceCollection.AddSingleton<ILoggerProvider>(new NLogCorrelatorSharpLoggerProvider());
         }
     }
 }
